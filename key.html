@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Dawn's Page</title>
+  <style>
+    /* Set up the body */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0d1a26;
+      color: white;
+      text-align: center;
+    }
+
+    /* Snowflake animation container */
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      color: white;
+      font-size: 1em;
+      opacity: 0.8;
+      animation: fall linear infinite;
+    }
+
+    /* Snowflake animation keyframes */
+    @keyframes fall {
+      0% {
+        transform: translateY(-10vh) translateX(0);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(110vh) translateX(calc(20vw - 10vw));
+        opacity: 0.4;
+      }
+    }
+
+    /* Title Styling */
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dawn's Tweaks</h1>
+
+  <!-- Snowflakes -->
+  <div class="snowflake" style="left: 10%; animation-duration: 5s;">❄</div>
+  <div class="snowflake" style="left: 30%; animation-duration: 7s;">❄</div>
+  <div class="snowflake" style="left: 50%; animation-duration: 4.5s;">❄</div>
+  <div class="snowflake" style="left: 70%; animation-duration: 6s;">❄</div>
+  <div class="snowflake" style="left: 90%; animation-duration: 8s;">❄</div>
+  <div class="snowflake" style="left: 15%; animation-duration: 9s;">❄</div>
+  <div class="snowflake" style="left: 40%; animation-duration: 6.5s;">❄</div>
+  <div class="snowflake" style="left: 60%; animation-duration: 5.5s;">❄</div>
+  <div class="snowflake" style="left: 85%; animation-duration: 7.5s;">❄</div>
+  <div class="snowflake" style="left: 95%; animation-duration: 10s;">❄</div>
+</body>
+</html>
